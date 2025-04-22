@@ -870,6 +870,7 @@
 #if !defined(ACTIVATION)
     #if defined(ACTIVATION__PER_LAYER)
         // ACTIVATE ALL FUNCTIONS
+        #undef ALL_A
         #define NO_BACKPROP
         #define ALL_ACTIVATION_FUNCTIONS
         #define ALL_A |> "(ALL_ACTIVATION_FUNCTIONS)"
